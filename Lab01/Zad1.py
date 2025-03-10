@@ -135,7 +135,7 @@ plt.title("Porówanie cosinus 95,195,295.")
 plt.grid()
 
 
-plt.subplot(3,1,3)
+plt.subplot(3, 1, 3)
 plt.plot(cosinuses[39][0], cosinuses[39][1], 'g-', label="95Hz")
 plt.plot(cosinuses[41][0], cosinuses[41][1], 'r-', label="105Hz")
 plt.legend()
