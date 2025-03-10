@@ -6,8 +6,8 @@ from singen import singen
 
 # Parametry sygnału
 amplA = 230
-freqA = 50
-timeA = 1
+freqA = 5
+timeA = 0.9
 phase = 0
 
 # Sygnał próbkowany fs3 = 200 Hz
