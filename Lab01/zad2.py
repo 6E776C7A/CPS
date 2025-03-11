@@ -6,7 +6,7 @@ from singen import singen
 
 # Parametry sygnału
 amplA = 230
-freqA = 5
+freqA = 50
 timeA = 0.9
 phase = 0
 
