@@ -1,3 +1,4 @@
+import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 from singen import singen
@@ -91,8 +92,8 @@ plt.grid()
 
 
 plt.subplot(3,1,3)
-plt.plot(sinuses[39][0], sinuses[39][1], 'g-', label="95Hz")
-plt.plot(sinuses[41][0], sinuses[41][1], 'r-', label="105Hz")
+plt.plot(sinuses[19][0], sinuses[19][1], 'g-', label="95Hz")
+plt.plot(sinuses[21][0], sinuses[21][1], 'r-', label="105Hz")
 plt.legend()
 plt.title("Porówanie sinus 95,105.")
 plt.grid()
@@ -136,28 +137,29 @@ plt.grid()
 
 
 plt.subplot(3, 1, 3)
-plt.plot(cosinuses[39][0], cosinuses[39][1], 'g-', label="95Hz")
-plt.plot(cosinuses[41][0], cosinuses[41][1], 'r-', label="105Hz")
+plt.plot(cosinuses[19][0], cosinuses[19][1], 'g-', label="95Hz")
+plt.plot(cosinuses[21][0], cosinuses[21][1], 'r-', label="105Hz")
 plt.legend()
 plt.title("Porówanie cosinus 95,105.")
 plt.grid()
 plt.show()
 
 # D 1
+matplotlib.use('TkAgg')
 fs1 = pow(10, 3)
 fb = 50
 fm = 1
 df = 5
-b = df/fm
+b = df/(fm*2*np.pi)
 time = 1
 t_size = int(time*fs1)
 t = np.linspace(0, time, t_size, endpoint=True)
 sin = b*np.sin(2*np.pi*fm*t)
-SFM = np.cos(2*np.pi*fb*t + b*np.sin(2*np.pi*fm*t))
-sin_dm = np.cos(2*np.pi*fb*t)
+SFM = np.sin(2*np.pi*fb*t - b*np.cos(2*np.pi*fm*t))
+sin_dm = np.sin(2*np.pi*fb*t)
 plt.plot(t, sin, label="Modulujący")
 plt.plot(t, SFM, label="Po modulacji")
-plt.plot(t, sin_dm, label="Przed modulacji")
+#plt.plot(t, sin_dm, label="Przed modulacji")
 plt.legend()
 plt.grid()
 plt.show()
@@ -167,7 +169,7 @@ plt.show()
 fs2 = 25
 t_size = int(time*fs2)
 t2 = np.linspace(0, time, t_size, endpoint=True)
-SFM2 = np.cos(2*np.pi*fb*t2 + b*np.sin(2*np.pi*fm*t2))
+SFM2 = np.sin(2*np.pi*fb*t2 - b*np.cos(2*np.pi*fm*t2))
 error = SFM - np.interp(t, t2, SFM2)
 plt.plot(t2, SFM2, label="Mniejsze próbkowanie 25Hz")
 plt.plot(t, SFM, label="Próbkowanie 10kHz")
