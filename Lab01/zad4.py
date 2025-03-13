@@ -1,54 +1,69 @@
 import numpy as np
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
+import matplotlib
 import sounddevice as sd
 
 
-def text_to_bits(text):
-    return ''.join(format(ord(char), '08b') for char in text)
+def playsound(signal, fs):
+    sd.play(signal, fs)
 
 
-def generate_signal(bits, fpr=16000, fc=500, T=0.1):
-    samples_per_bit = int(fpr * T)
-    t = np.linspace(0, T, samples_per_bit, endpoint=False)
-    signal = np.concatenate([np.sin(2 * np.pi * fc * t) if bit == '0' else -np.sin(2 * np.pi * fc * t) for bit in bits])
-    return signal
+matplotlib.use('TkAgg')
 
+Imie = "Patryk"
 
-def play_signal(signal, fpr):
-    sd.play(signal, fpr)
-    sd.wait()
+Imie_bin = ''.join(format(ord(i), '08b') for i in Imie)
 
+print(f'Imie w formie binarnej: {Imie_bin}')
 
-def main():
-    name = "Janek"
-    bits = text_to_bits(name)
-    print(f"Bity dla '{name}': {bits}")
+fs = 16 * pow(10, 3)
 
-    signal = generate_signal(bits)
+T = 0.1
 
-    # Rysowanie sygnału
-    plt.figure(figsize=(10, 4))
-    plt.plot(signal[:5000])  # Pokazujemy tylko fragment sygnału
-    plt.title("Sygnał transmitujący bity ASCII")
-    plt.xlabel("Próbki")
-    plt.ylabel("Amplituda")
-    plt.show()
+freq = 500
 
-    # Odtwarzanie sygnału dla różnych częstotliwości próbkowania
-    for fpr in [8000, 16000, 24000, 32000, 48000]:
-        print(f"Odtwarzanie dla fpr = {fpr} Hz")
-        play_signal(signal, fpr)
+signal = np.array([])
 
+t_bit = np.arange(0, T, 1 / fs)
 
-if __name__ == "__main__":
-    main()
+carrier_0 = np.sin(2 * np.pi * freq * t_bit)
+carrier_1 = -np.sin(2 * np.pi * freq * t_bit)
 
-# Szybsza transmisja bitów
-# Aby przyspieszyć transmisję, można:
-#
-# Skrócić czas trwania pojedynczego bitu (T).
-# Zastosować transmisję wielopoziomową, np.:
-# Modulację amplitudy (ASK): różne amplitudy dla różnych kombinacji bitów.
-# Modulację fazy (PSK): przesunięcie fazowe dla różnych bitów.
-# Modulację częstotliwości (FSK): inne częstotliwości sinusoidy dla różnych bitów.
-# Jeśli mamy 2 bity na raz, możemy użyć 4 poziomów amplitudy lub fazy (np. 0°, 90°, 180°, 270°), co podwoiłoby prędkość transmisji. Przy 3 bitach można użyć 8 poziomów itd.
+soundFreq = [8000, 16000, 24000, 32000, 48000]
+
+for bit in Imie_bin:
+    if bit == '0':
+        signal = np.append(signal, carrier_0)
+    else:
+        signal = np.append(signal, carrier_1)
+
+print(len(signal))
+t_plot = np.arange(0, min(0.5, len(Imie) * T), 1 / fs)
+plt.plot(t_plot, signal[:len(t_plot)])
+plt.show()
+
+# for s in soundFreq:
+#     sd.play(signal, s)
+#     sd.wait()
+
+samplesPerBit = int(T * fs)
+numBits = len(Imie_bin)
+
+decodedBits = ''
+
+for i in range(numBits):
+    signalSegment = signal[i*samplesPerBit:(i+1)*samplesPerBit]
+    dot = np.sum(signalSegment * carrier_0)
+    if dot > 0:
+        decodedBits += '0'
+    else:
+        decodedBits += '1'
+
+text = ''
+
+for i in range(0, len(decodedBits), 8):
+    byte = decodedBits[i:i+8]
+    if len(byte) == 8:
+        text += chr(int(byte, 2))
+
+print(f'Imię po dekodowaniu: {text}')
