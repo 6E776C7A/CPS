@@ -67,11 +67,11 @@ sinuses = []
 for i, freq in enumerate(range(0, freqC+5, 5)):
     sin, time = singen(amplC, timeC, freq, fs, phase)
     sinuses.append((time, sin))
-    # plt.plot(time, sin, 'g-o', label=f'{freq}Hz')
-    # plt.legend()
-    # plt.title(f'Sinus Iteration: {i} Frequency: {freq}Hz  ')
-    # plt.grid()
-    # plt.show()
+    plt.plot(time, sin, 'g-o', label=f'{freq}Hz')
+    plt.legend()
+    plt.title(f'Sinus Iteration: {i} Frequency: {freq}Hz  ')
+    plt.grid()
+    plt.show()
 
 plt.figure()
 plt.subplot(3,1,1)
