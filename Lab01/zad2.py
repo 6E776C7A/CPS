@@ -31,7 +31,7 @@ for idx in range(t_size):
 sin_analog, _ = singen(amplA, timeA, freqA, fs, phase)
 
 # Obliczenie błędu rekonstrukcji
-error = sin_analog - reconstructed_signal
+error =reconstructed_signal -  sin_analog
 
 # Wykresy
 plt.figure(figsize=(10, 5))

@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b561990-44e3-48e6-a7d4-cec641827b7d" name="Changes" comment="Zadanie 4">
+    <list default="true" id="0b561990-44e3-48e6-a7d4-cec641827b7d" name="Changes" comment="Zadanie 4 do połowy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/zad1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01/zad1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/zad3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01/zad3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/zad4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01/zad4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab01/zad2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01/zad2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,32 +34,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.XD.executor": "Run",
-    "Python.Zad1.executor": "Run",
-    "Python.Zadanie3.executor": "Run",
-    "Python.lab1zad4.executor": "Run",
-    "Python.singen.executor": "Run",
-    "Python.zad1.executor": "Run",
-    "Python.zad2.executor": "Run",
-    "Python.zad3.executor": "Run",
-    "Python.zad4.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/patpa/PycharmProjects/CPS/Lab01",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.XD.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Zad1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Zadanie3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lab1zad4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.singen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.zad1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.zad2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.zad3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.zad4.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/patpa/PycharmProjects/CPS/Lab01&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\patpa\PycharmProjects\CPS\Lab01" />
@@ -99,7 +97,9 @@
       <workItem from="1741806124434" duration="5546000" />
       <workItem from="1741855067786" duration="436000" />
       <workItem from="1741863940860" duration="3441000" />
-      <workItem from="1741874600428" duration="3275000" />
+      <workItem from="1741874600428" duration="3485000" />
+      <workItem from="1741880145862" duration="65000" />
+      <workItem from="1741880243297" duration="85000" />
     </task>
     <task id="LOCAL-00001" summary="Zadanie 1">
       <option name="closed" value="true" />
@@ -173,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741724216210</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Zadanie 4 do połowy">
+      <option name="closed" value="true" />
+      <created>1741877944604</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1741877944604</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +205,8 @@
     <MESSAGE value="Zadanie 3?" />
     <MESSAGE value="Zadanie 3" />
     <MESSAGE value="Zadanie 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 4" />
+    <MESSAGE value="Zadanie 4 do połowy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 4 do połowy" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -210,10 +219,10 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CPS$zad3.coverage" NAME="zad3 Coverage Results" MODIFIED="1741877882667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
+    <SUITE FILE_PATH="coverage/CPS$zad3.coverage" NAME="zad3 Coverage Results" MODIFIED="1741880152202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
     <SUITE FILE_PATH="coverage/CPS$Zadanie3.coverage" NAME="Zadanie3 Coverage Results" MODIFIED="1741715878109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
     <SUITE FILE_PATH="coverage/CPS$XD.coverage" NAME="XD Coverage Results" MODIFIED="1741810275812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
-    <SUITE FILE_PATH="coverage/CPS$zad2.coverage" NAME="zad2 Coverage Results" MODIFIED="1741865341467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
+    <SUITE FILE_PATH="coverage/CPS$zad2.coverage" NAME="zad2 Coverage Results" MODIFIED="1741880302437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
     <SUITE FILE_PATH="coverage/CPS$zad4.coverage" NAME="zad4 Coverage Results" MODIFIED="1741876310359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
     <SUITE FILE_PATH="coverage/CPS$lab1zad4.coverage" NAME="lab1zad4 Coverage Results" MODIFIED="1741810562707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Temp/e7c7501e-a6f0-4611-9fa0-c897e0a27efe_CPS.zip.efe/CPS" />
     <SUITE FILE_PATH="coverage/CPS$zad1.coverage" NAME="zad1 Coverage Results" MODIFIED="1741876354247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
