@@ -8,17 +8,14 @@ def cross_correlation(x, y):
     lenY = len(y)
     correlation = np.zeros(lenX + lenY - 1)
 
-    y = y[::1]
-
     # Obliczanie korelacji
     for k in range(lenX + lenY - 1):
         sum_val = 0
-        for l in range(lenX):
-            if 0 <= k - l < lenY:
+        for l in range(max(0, k + 1 - lenY), min(k, lenX - 1) + 1):
                 sum_val += x[l] * y[k - l]
         correlation[k] = sum_val
 
-    return correlation[::1]
+    return correlation
 
 
 adsl = sio.loadmat('adsl_x.mat')
@@ -43,7 +40,7 @@ for i in range(len(x)):
     if len(z) >= 2:
         bestPrefix.append(prefix)
         bestScore.append(correlation)
-        prefixPoz.append(i)
+        prefixPoz.append(i-M)
 
 for i in range(len(bestScore)):
     plt.axvline(prefixPoz[i], color='red')
@@ -57,7 +54,6 @@ print(prefixPoz)
 
 #Dla gotowej funkcji
 for i in range(len(x)):
-    print(i)
     # iterowanie od 0
     prefix = x[i:i + M]
     correlation = cross_correlation(x, prefix)

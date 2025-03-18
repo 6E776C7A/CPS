@@ -7,6 +7,7 @@ N = 20
 maciez_cos = np.zeros((N, N))
 s = np.sqrt(2/N)
 
+#Żeby nie było błędów obliczeniowych spowodowanych dokładnością Python
 np.set_printoptions(suppress=True, precision=8, threshold=8)
 
 for kolumny in range(N):
@@ -88,7 +89,7 @@ for i in range(N-1):
 
 print(f'Wartości mnożenia skalarnego:\n {skalar5, skalar6}')
 
-S = np.linalg.inv(A)
+S = np.conj(A.transpose())
 
 t = np.linspace(0, 1, N, endpoint=False)
 signal = np.sin(2 * np.pi * 5 * t) + 0.5 * np.random.randn(N)
