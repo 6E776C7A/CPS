@@ -23,7 +23,7 @@ s = np.sqrt(2 / N)
 for kolumny in range(N):
     for wiersze in range(N):
         if kolumny == 0:
-            A[wiersze][kolumny] = (s * 1 / np.sqrt(2)) * np.cos((np.pi * kolumny * (wiersze + 0.5)) / N)
+            A[wiersze][kolumny] = np.sqrt(1/N)
         else:
             A[wiersze][kolumny] = s * np.cos((np.pi * kolumny * (wiersze + 0.5)) / N)
 
