@@ -110,7 +110,9 @@
       <workItem from="1742302057084" duration="3313000" />
       <workItem from="1742319078582" duration="15000" />
       <workItem from="1742319201243" duration="3647000" />
-      <workItem from="1742409658083" duration="634000" />
+      <workItem from="1742409658083" duration="926000" />
+      <workItem from="1742460067597" duration="291000" />
+      <workItem from="1742468948088" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="Zadanie 1">
       <option name="closed" value="true" />
@@ -224,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742324036731</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="LAB 2 zad 5">
+      <option name="closed" value="true" />
+      <created>1742410573441</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1742410573441</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +280,7 @@
     <SUITE FILE_PATH="coverage/CPS$zad2.coverage" NAME="zad2 Coverage Results" MODIFIED="1741880302437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
     <SUITE FILE_PATH="coverage/CPS$lab1zad4.coverage" NAME="lab1zad4 Coverage Results" MODIFIED="1741810562707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Temp/e7c7501e-a6f0-4611-9fa0-c897e0a27efe_CPS.zip.efe/CPS" />
     <SUITE FILE_PATH="coverage/CPS$singen.coverage" NAME="singen Coverage Results" MODIFIED="1741523324749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
-    <SUITE FILE_PATH="coverage/CPS$Zad3.coverage" NAME="Zad3 Coverage Results" MODIFIED="1742410224213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab02" />
+    <SUITE FILE_PATH="coverage/CPS$Zad3.coverage" NAME="Zad3 Coverage Results" MODIFIED="1742460316117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab02" />
     <SUITE FILE_PATH="coverage/CPS$zad3.coverage" NAME="zad3 Coverage Results" MODIFIED="1742242555487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
     <SUITE FILE_PATH="coverage/CPS$XD.coverage" NAME="XD Coverage Results" MODIFIED="1741810275812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
     <SUITE FILE_PATH="coverage/CPS$zad4.coverage" NAME="zad4 Coverage Results" MODIFIED="1741876310359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />

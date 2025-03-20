@@ -47,21 +47,21 @@ S = np.conj(A.transpose())
 
 
 
-for i in range(N):
-    fig, axs = plt.subplots(2, 1, figsize=(6, 6))
-
-    axs[0].plot(A[i, :], label=f'Wiersz {i}')
-    axs[0].set_title('Wiersze macierzy A (DCT)')
-    axs[0].legend()
-    axs[0].grid()
-
-    axs[1].plot(S[:, i], label=f'Kolumna {i}')
-    axs[1].set_title('Kolumny macierzy S (IDCT)')
-    axs[1].legend()
-    axs[1].grid()
-
-    plt.tight_layout()
-    plt.show()
+# for i in range(N):
+#     fig, axs = plt.subplots(2, 1, figsize=(6, 6))
+#
+#     axs[0].plot(A[i, :], label=f'Wiersz {i}')
+#     axs[0].set_title('Wiersze macierzy A (DCT)')
+#     axs[0].legend()
+#     axs[0].grid()
+#
+#     axs[1].plot(S[:, i], label=f'Kolumna {i}')
+#     axs[1].set_title('Kolumny macierzy S (IDCT)')
+#     axs[1].legend()
+#     axs[1].grid()
+#
+#     plt.tight_layout()
+#     plt.show()
 
 y = A @ x
 
