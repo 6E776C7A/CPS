@@ -36,7 +36,7 @@ print(f'Macierz identycznościowa:\n {maciez_ide}')
 
 x = np.random.randn(N)
 
-x = np.conj(np.transpose(x))
+x = np.transpose(x)
 
 X = maciez_cos @ x
 
@@ -53,12 +53,12 @@ skalar2 = np.zeros(N - 1)
 skalar3 = np.zeros(N - 1)
 
 for i in range(N - 1):
-    skalar2[i] = np.dot(maciez_cos[i], maciez_cos[i + 1])
-    skalar3[i] = np.dot(maciez_cos[i], maciez_cos[i])
+    skalar2[i] = np.dot(A[i], A[i + 1])
+    skalar3[i] = np.dot(A[i], A[i])
 
 print(f'Wartości mnożenia skalarnego:\n {skalar2, skalar3}')
 
-S = np.linalg.inv(A)
+S = np.transpose(A)
 
 I = S @ A
 
@@ -92,7 +92,7 @@ print(f'Wartości mnożenia skalarnego:\n {skalar5, skalar6}')
 S = np.conj(A.transpose())
 
 t = np.linspace(0, 1, N, endpoint=False)
-signal = np.sin(2 * np.pi * 5 * t) + 0.5 * np.random.randn(N)
+signal = np.sin(2 * np.pi * 5 * t) # + 0.5 * np.random.randn(N)
 
 X = A @ signal
 

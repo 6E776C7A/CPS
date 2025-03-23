@@ -31,6 +31,12 @@ M = np.zeros((10, 256))
 poczatkiM = list()
 
 L = [2000, 4000, 12000, 13000, 17500, 18000, 20000, 25000, 33000, 35000]
+colors = plt.cm.rainbow(np.linspace(0, 1, len(L)))
+plt.plot(signal)
+for i, probki in enumerate(L):
+    plt.axvline(probki, color=colors[i])
+    plt.axvline(probki+256, color=colors[i])
+
 
 for i in range(10):
     M[i] = signal[L[i]:L[i] + N]

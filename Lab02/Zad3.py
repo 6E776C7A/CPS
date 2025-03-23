@@ -11,10 +11,10 @@ np.set_printoptions(precision=8, suppress=True)
 
 N = 100
 fs = 1000
-# f = [50, 100, 150]
+f = [50, 100, 150]
 
 # na 107 jest rozmycie z jakiegos powodu na 105 jest nie zauważalne
-f = [50, 107, 150]
+# f = [50, 107, 150]
 
 # zwiększenie wszystkiego o 2.5Hz
 # f = [52.5, 102.5, 152.5]
@@ -22,7 +22,7 @@ Amp = [50, 100, 150]
 
 t = np.linspace(0, N / fs, N, endpoint=False)
 
-x = Amp[0] * np.sin(2 * np.pi * f[0] * t) + Amp[1] * np.sin(2 * np.pi * f[1] * t) + Amp[2] * np.sin(
+x = Amp[0] * np.cos(2 * np.pi * f[0] * t) + Amp[1] * np.cos(2 * np.pi * f[1] * t) + Amp[2] * np.cos(
     2 * np.pi * f[2] * t)
 plt.title('Sygnału x')
 plt.grid()
