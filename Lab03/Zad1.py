@@ -51,6 +51,8 @@ X_imag = np.imag(X)
 
 rysowanie(f, X_real, 'Część rzeczywista', 'Częstotliwość [Hz]', 'Amplituda')
 rysowanie(f, X_imag, 'Część urojona', 'Częstotliwość [Hz]', 'Amplituda')
+rysowanie(f, abs(X), 'Moduł X', 'Częstotliwość [Hz]', 'Amplituda')
+
 
 # wyznaczanie macierzy B
 
