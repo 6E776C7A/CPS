@@ -10,7 +10,7 @@ matplotlib.use('TkAgg')
 
 # Sygnał x
 
-N = 100
+N = 1000
 # N = 1000
 
 A1 = 1
@@ -50,7 +50,7 @@ DTFT_B = (1 / N) * np.sum(x_B * exp_term, axis=1, dtype=np.complex128)
 DTFT_C_100 = (1 / N) * np.sum(x_C_100 * exp_term, axis=1, dtype=np.complex128)
 DTFT_C_125 = (1 / N) * np.sum(x_C_125 * exp_term, axis=1, dtype=np.complex128)
 
-rysowanie(f, DTFT, 'Widmo DTFT', 'Częstotliwość [Hz]', 'Amplituda')
+rysowanie(f, 20*np.log10(abs(DTFT)), 'Widmo DTFT', 'Częstotliwość [Hz]', 'Amplituda')
 
 fig, axs = plt.subplots(5, 1, figsize=(8, 6), constrained_layout=True)
 

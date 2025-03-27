@@ -1,4 +1,6 @@
 import numpy as np
+from matplotlib import pyplot as plt
+
 from plot import rysowanie
 
 # Zadanie 1
@@ -47,12 +49,14 @@ rysowanie(f, X, 'Widmo sygnału x', 'Częstotliwość [Hz]', 'Amplituda')
 # część rzeczywista oraz urojona
 X_real = np.real(X)
 X_imag = np.imag(X)
-phase = np.angle(X)
+# Bardzo ciekawe
+phase = np.angle(X)*abs(X>1)
+
 
 rysowanie(f, X_real, 'Część rzeczywista', 'Częstotliwość [Hz]', 'Amplituda')
 rysowanie(f, X_imag, 'Część urojona', 'Częstotliwość [Hz]', 'Amplituda')
 rysowanie(f, abs(X), 'Moduł X', 'Częstotliwość [Hz]', 'Amplituda')
-rysowanie(f, phase, 'Faza sygnału', 'Częstotliwość [Hz]', 'Faza [rad]')
+rysowanie(f, phase, 'Faza', 'Częstotliwość [Hz]', 'Amplituda')
 
 
 # wyznaczanie macierzy B
