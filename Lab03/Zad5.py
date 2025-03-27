@@ -10,6 +10,7 @@ np.set_printoptions(precision=8, suppress=True, linewidth=200, threshold=100)
 mat = scipy.io.loadmat("rec_1m.mat")
 
 y = mat['val'].flatten()
+y = y - np.mean(y)
 N = int(len(y))
 x = y[:N]
 fs = 500
@@ -18,7 +19,6 @@ t = np.linspace(0, tmax, N, endpoint=False)
 X = np.fft.fft(x)
 fz = np.linspace(0, tmax, 20000, endpoint=False)
 n = np.arange(N)
-Xp = np.zeros(len(x), dtype=complex)
 Xp = (1 / N) * np.sum(x * np.exp(-1j * 2 * np.pi * n * fz[:, None] / fs), axis=1, dtype=np.complex128)
 
 plt.plot(t, x[:N], label="Sygnał")
