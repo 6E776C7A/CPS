@@ -9,7 +9,6 @@ f_s2 = 97.5e6  # górna granica pasma zaporowego [Hz]
 
 wp = [2 * np.pi * f_p1, 2 * np.pi * f_p2]
 ws = [2 * np.pi * f_s1, 2 * np.pi * f_s2]
-rp = 1
 
 gpass = 3  # maksymalne zafalowanie w paśmie przepustowym [dB]
 gstop = 40  # minimalne tłumienie w paśmie zaporowym [dB]
@@ -42,7 +41,6 @@ f_s2 = 96.5e6  # górna granica pasma zaporowego [Hz]
 
 wp = [2 * np.pi * f_p1, 2 * np.pi * f_p2]
 ws = [2 * np.pi * f_s1, 2 * np.pi * f_s2]
-rp = 1
 
 gpass = 3  # maksymalne zafalowanie w paśmie przepustowym [dB]
 gstop = 40  # minimalne tłumienie w paśmie zaporowym [dB]
