@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import matplotlib
-from scipy.signal import zpk2tf
+from scipy.signal import TransferFunction
 
 matplotlib.use('TkAgg')
 import numpy as np
@@ -83,13 +83,9 @@ w0 = 1j * 10
 
 H_w0 = np.polyval(b, w0) / np.polyval(a, w0)
 
-current_gain = np.abs(H_w0)
-# k = current_gain ** (1 / (len(Z) - len(P)))
-# P_new = P * k
-# Z_new = Z * k
+b = b/H_w0
 
-# Wyznaczanie transmitancji
-H_normalized = H / current_gain
+H_normalized = np.polyval(b, S) / np.polyval(a, S)
 
 # Ch-Cz
 plt.figure(figsize=(6, 6))

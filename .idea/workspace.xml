@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b561990-44e3-48e6-a7d4-cec641827b7d" name="Changes" comment="LAB 3 zad 5">
-      <change afterPath="$PROJECT_DIR$/Lab05/Zad 1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab05/Zad 2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab05/Zad 3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab05/Zad 4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab05/Zad 6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab05/zad 5.py" afterDir="false" />
+    <list default="true" id="0b561990-44e3-48e6-a7d4-cec641827b7d" name="Changes" comment="LAB 5 zad 5">
+      <change afterPath="$PROJECT_DIR$/Lab06/Zad01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab06/Zad02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab06/Zad03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab06/Zad04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab06/bird.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab06/butter.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab06/decoder_fm.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab06/output_fm.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab06/porche.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab06/s.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab06/s6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab06/samples_100MHz_fs3200kHz.raw" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab05/Zad 1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05/Zad 1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +56,10 @@
     &quot;Python.Zad 3.executor&quot;: &quot;Run&quot;,
     &quot;Python.Zad 4.executor&quot;: &quot;Run&quot;,
     &quot;Python.Zad 6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Zad01.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Zad02.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Zad03.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Zad04.executor&quot;: &quot;Run&quot;,
     &quot;Python.Zad1.executor&quot;: &quot;Run&quot;,
     &quot;Python.Zad1i2.executor&quot;: &quot;Run&quot;,
     &quot;Python.Zad2.executor&quot;: &quot;Run&quot;,
@@ -67,7 +78,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Nokia/sdr/SDR&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/patpa/PycharmProjects/CPS/Lab06&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -79,9 +90,13 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\patpa\PycharmProjects\CPS\Lab06" />
       <recent name="C:\Users\patpa\PycharmProjects\CPS\Lab03" />
       <recent name="C:\Users\patpa\PycharmProjects\CPS\Lab02" />
       <recent name="C:\Users\patpa\PycharmProjects\CPS\Lab01" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\patpa\PycharmProjects\CPS\Lab06" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -153,7 +168,15 @@
       <workItem from="1744018283713" duration="793000" />
       <workItem from="1744122847488" duration="144000" />
       <workItem from="1744215887946" duration="5821000" />
-      <workItem from="1744274359190" duration="2674000" />
+      <workItem from="1744274359190" duration="3679000" />
+      <workItem from="1744278948605" duration="4000" />
+      <workItem from="1744279164181" duration="223000" />
+      <workItem from="1744290599412" duration="2955000" />
+      <workItem from="1744442397894" duration="56000" />
+      <workItem from="1745148772071" duration="520000" />
+      <workItem from="1745400762024" duration="1841000" />
+      <workItem from="1745419501682" duration="5549000" />
+      <workItem from="1745425216766" duration="28000" />
     </task>
     <task id="LOCAL-00001" summary="Zadanie 1">
       <option name="closed" value="true" />
@@ -347,7 +370,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743088169714</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="LAB 5 zad 5">
+      <option name="closed" value="true" />
+      <created>1744277206426</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1744277206426</updated>
+    </task>
+    <task id="LOCAL-00026" summary="LAB 5 zad 5">
+      <option name="closed" value="true" />
+      <created>1744279359442</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1744279359442</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +417,8 @@
     <MESSAGE value="LAB 3 zad 1" />
     <MESSAGE value="LAB 3 zad 2" />
     <MESSAGE value="LAB 3 zad 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="LAB 3 zad 5" />
+    <MESSAGE value="LAB 5 zad 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="LAB 5 zad 5" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -391,25 +431,29 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CPS$Zad1i2.coverage" NAME="Zad1i2 Coverage Results" MODIFIED="1742482656224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab02" />
-    <SUITE FILE_PATH="coverage/CPS$Zad_2.coverage" NAME="Zad 2 Coverage Results" MODIFIED="1743962527056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab05" />
-    <SUITE FILE_PATH="coverage/CPS$Zadanie3.coverage" NAME="Zadanie3 Coverage Results" MODIFIED="1741715878109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
-    <SUITE FILE_PATH="coverage/CPS$zad2.coverage" NAME="zad2 Coverage Results" MODIFIED="1741880302437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
-    <SUITE FILE_PATH="coverage/CPS$Zad2.coverage" NAME="Zad2 Coverage Results" MODIFIED="1743084630582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab03" />
-    <SUITE FILE_PATH="coverage/CPS$Zad_3.coverage" NAME="Zad 3 Coverage Results" MODIFIED="1744222230651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab05" />
+    <SUITE FILE_PATH="coverage/CPS$Zad03.coverage" NAME="Zad03 Coverage Results" MODIFIED="1745424070167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab06" />
+    <SUITE FILE_PATH="coverage/CPS$Zad_3.coverage" NAME="Zad 3 Coverage Results" MODIFIED="1744278111391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab05" />
     <SUITE FILE_PATH="coverage/CPS$Zad_6.coverage" NAME="Zad 6 Coverage Results" MODIFIED="1744222831383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab05" />
-    <SUITE FILE_PATH="coverage/CPS$lab1zad4.coverage" NAME="lab1zad4 Coverage Results" MODIFIED="1741810562707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Temp/e7c7501e-a6f0-4611-9fa0-c897e0a27efe_CPS.zip.efe/CPS" />
-    <SUITE FILE_PATH="coverage/CPS$singen.coverage" NAME="singen Coverage Results" MODIFIED="1741523324749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
     <SUITE FILE_PATH="coverage/CPS$Zad3.coverage" NAME="Zad3 Coverage Results" MODIFIED="1743086935596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab03" />
     <SUITE FILE_PATH="coverage/CPS$zad3.coverage" NAME="zad3 Coverage Results" MODIFIED="1742242555487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
-    <SUITE FILE_PATH="coverage/CPS$Zad_4.coverage" NAME="Zad 4 Coverage Results" MODIFIED="1744217565287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab05" />
-    <SUITE FILE_PATH="coverage/CPS$zad_5.coverage" NAME="zad 5 Coverage Results" MODIFIED="1744218899028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab05" />
     <SUITE FILE_PATH="coverage/CPS$XD.coverage" NAME="XD Coverage Results" MODIFIED="1741810275812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
-    <SUITE FILE_PATH="coverage/CPS$zad4.coverage" NAME="zad4 Coverage Results" MODIFIED="1741876310359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
+    <SUITE FILE_PATH="coverage/CPS$Zad5.coverage" NAME="Zad5 Coverage Results" MODIFIED="1745148796415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab03" />
+    <SUITE FILE_PATH="coverage/CPS$Zad_2.coverage" NAME="Zad 2 Coverage Results" MODIFIED="1744291271014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab05" />
+    <SUITE FILE_PATH="coverage/CPS$Zad1i2.coverage" NAME="Zad1i2 Coverage Results" MODIFIED="1745148907648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab02" />
+    <SUITE FILE_PATH="coverage/CPS$Zadanie3.coverage" NAME="Zadanie3 Coverage Results" MODIFIED="1741715878109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
+    <SUITE FILE_PATH="coverage/CPS$Zad01.coverage" NAME="Zad01 Coverage Results" MODIFIED="1745422523387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab06" />
+    <SUITE FILE_PATH="coverage/CPS$Zad2.coverage" NAME="Zad2 Coverage Results" MODIFIED="1743084630582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab03" />
+    <SUITE FILE_PATH="coverage/CPS$zad2.coverage" NAME="zad2 Coverage Results" MODIFIED="1741880302437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
+    <SUITE FILE_PATH="coverage/CPS$lab1zad4.coverage" NAME="lab1zad4 Coverage Results" MODIFIED="1741810562707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Temp/e7c7501e-a6f0-4611-9fa0-c897e0a27efe_CPS.zip.efe/CPS" />
+    <SUITE FILE_PATH="coverage/CPS$singen.coverage" NAME="singen Coverage Results" MODIFIED="1741523324749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
+    <SUITE FILE_PATH="coverage/CPS$Zad04.coverage" NAME="Zad04 Coverage Results" MODIFIED="1745425003945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab06" />
+    <SUITE FILE_PATH="coverage/CPS$Zad02.coverage" NAME="Zad02 Coverage Results" MODIFIED="1745423155010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab06" />
+    <SUITE FILE_PATH="coverage/CPS$Zad_4.coverage" NAME="Zad 4 Coverage Results" MODIFIED="1744278037610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab05" />
+    <SUITE FILE_PATH="coverage/CPS$zad_5.coverage" NAME="zad 5 Coverage Results" MODIFIED="1744292779134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab05" />
     <SUITE FILE_PATH="coverage/CPS$Zad4.coverage" NAME="Zad4 Coverage Results" MODIFIED="1742841205960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab03" />
-    <SUITE FILE_PATH="coverage/CPS$Zad5.coverage" NAME="Zad5 Coverage Results" MODIFIED="1743086852868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab03" />
+    <SUITE FILE_PATH="coverage/CPS$zad4.coverage" NAME="zad4 Coverage Results" MODIFIED="1741876310359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
     <SUITE FILE_PATH="coverage/CPS$zad1.coverage" NAME="zad1 Coverage Results" MODIFIED="1742238389633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab01" />
     <SUITE FILE_PATH="coverage/CPS$Zad1.coverage" NAME="Zad1 Coverage Results" MODIFIED="1743686272070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab05" />
-    <SUITE FILE_PATH="coverage/CPS$Zad_1.coverage" NAME="Zad 1 Coverage Results" MODIFIED="1744276853026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab05" />
+    <SUITE FILE_PATH="coverage/CPS$Zad_1.coverage" NAME="Zad 1 Coverage Results" MODIFIED="1744291852085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab05" />
   </component>
 </project>
